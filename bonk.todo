@@ -1,0 +1,196 @@
+    - Search rooms @done
+- link to join room window @done
+- FPS @done
+- Level XP bar @done
+
+BONK PANEL SETTINGS
+- Panel Size
+- Reset Panel Size
+- Font Size
+- Top bar size
+- Spacing size
+- Reset Font, topbar, spacing size
+- Save
+- Lock
+- Reset all size
+- When (situation) dropdown
+- All panel top items (drag to panel)
+- Preview
+- Save
+- Reset this
+- Reset all
+
+PANELS
+https://fonts.google.com/icons?selected=Material%20Icons%3Achat%3A /
+- Chat
+    - Chat msg
+    - Enter chat
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Apeople_alt%3A /
+- Player List
+    - Show players
+    - Toogle score/ping
+    - Host :
+        - Team lock
+        - Team on/off
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Asports_esports%3A /
+- Customize game
+    - Copy Link
+    - Spam Chat
+    - Spam Ready
+    - Reminder Sound
+        - Game start
+        - Game end
+        - Round start
+        - Round end
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Aadmin_panel_settings%3A /
+- Host
+    - Rounds to win
+    - Start
+    - Troll start
+    - Map
+    - Editor
+    - Mode
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Amanage_accounts%3A /
+- Advance Host
+    - Free join
+    - Keep Scores
+    - Auto move
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Ainfo%3A /
+- Room info
+    - Room name
+    - Room max player
+    - Rounds to win
+    - Mode
+    - Map name
+    - Map author
+    - Map image
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Aface%3A /
+- Skin selector
+    - List all skins
+    - Set active button
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Aanalytics%3A /
+- Statistics
+    - Total
+    - Quick play
+        - Classic
+        - Arrows
+        - Grapple
+    - Custom
+
+- About
+    - How to change settings
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Aaccount_circle%3A /
+- Me
+    - Name
+    - Total win rounds
+        - XP/100
+    - Level
+        - var lvl = Math.floor(XP**0.5/10)+1
+    - To level 200
+        - var input = 200
+        - var XP = 2078600
+        - var lvl200xp = (input-1)**2*100
+        - var thislvlminxp = (lvl-1)**2*100
+        - var percent = ((XP-thislvlminxp)/(lvl200xp-thislvlminxp)*100).toFixed(2)
+    - How many rounds you need to win to get level 200
+        - var needtowinrounds = Math.ceil((lvl200xp-XP)/100)
+    - Refresh
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Afilter_alt%3A /
+- Filter
+    - Multiselect
+    - Classic
+    - Arrows
+    - Death Arrows
+    - Grapple
+    - Simple
+    - VTOL
+    - Football
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Alayers%3A /
+- Map Layers
+    - Elements
+        - Show/Hide
+        - Rename
+        - Delete
+        - Add
+        - Lock
+        - Other stuff
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Aformat_shapes%3A /
+- Map Shapes
+    - Shapes
+        - Show/Hide
+        - Rename
+        - Delete
+        - Add
+        - Lock
+        - Other stuff
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Ajoin_inner%3A /
+- Map Joints
+    - Joints
+        - Show/Hide
+        - Rename
+        - Delete
+        - Add
+        - Lock
+        - Other stuff
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Atune%3A /
+- Map Properties
+    - Other stuff
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Apreview%3A /
+- Skin view
+    - Free for all
+    - Red team
+    - Blue team
+    - Green team
+    - Yellow team
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Atune%3A /
+- Skin properties
+    - Other stuff
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Alayers%3A /
+- Skin layers
+    - Lock
+    - Show/hide
+    - Add
+    - Delete
+    - Move up/down
+
+
+https://fonts.google.com/icons?selected=Material%20Icons%3Asettings_applications%3A
+- Skin settings
+    - Undo
+    - Redo
+    - History
+    - Base colour
+    - Cancel
+    - Save

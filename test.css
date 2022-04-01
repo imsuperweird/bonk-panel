@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+#panel_settings_window_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    aspect-ratio: 4/3;
+    height: 100vh;
+    /* visibility: hidden; */
+}
+
+#panel_settings_window {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--greyWindowBGColor);
+    background-color: #303030;
+    color: #5d858d;
+    pointer-events: auto !important;
+    border-radius: 7px;
+    
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#left {
+    width: 20%;
+    background-color: red;
+}

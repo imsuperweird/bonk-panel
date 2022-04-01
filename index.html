@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Deobfuscator</title>
+    <script src="v8yy.js"></script>
+</head>
+
+<body style="margin: 0px 15px">
+    <input type="text" id="input" placeholder="input" style="margin-top: 5vh; width: 100%; height: 5vh; float: right;">
+    <textarea id="textarea" style="margin-top: 5vh; width: 100%; height: 80vh; float: right;"
+        placeholder="Paste your code here"></textarea>
+    <script>
+        const title = document.getElementById("title")
+        const input = document.getElementById("input")
+        const textarea = document.getElementById("textarea")
+        input.value = localStorage.getItem("input")
+        textarea.value = localStorage.getItem("textarea")
+        input.onkeyup = e => {
+            if (e.which == 13) start()
+        }
+        textarea.onkeyup = e => {
+            if (e.which == 13) start()
+        }
+
+        function start() {
+            localStorage.setItem("input", input.value)
+            localStorage.setItem("textarea", textarea.value)
+            var number,
+                res = textarea.value
+            if (!input.value) input.value = textarea.value.match(/[\w\[\]]+\s\=\sv8yy/g)[0].replace(" = v8yy", "")
+            if (/.+\[\d+\]/g.test(input.value)) {
+                const temp = input.value.split("["),
+                    input1 = temp[0],
+                    input2 = temp[1].slice(0, -1),
+                    filterarray = [...new Set(textarea.value.match(new RegExp(`${input1}\\[${input2}\\]\\[\\d+\\]`, "g")))]
+                filterarray.forEach(i => {
+                    const val = i.replace(new RegExp(`${input1}\\[${input2}\\]`, "g"), "").slice(1, -1)
+                    res = res.replace(new RegExp(`${input1}\\[${input2}\\]\\[${val}\\]`, "g"), `"${array[parseInt(val)]}"`)
+                })
+                number = [...new Set(res.match(new RegExp(`${input1}\\[${input2}\\]\\[`, "g")))].length
+            } else {
+                const filterarray = [...new Set(textarea.value.match(new RegExp(`${input.value}\\[\\d+\\]`, "g")))]
+                filterarray.forEach(i => {
+                    const val = i.replace(new RegExp(input.value, "g"), "").slice(1, -1)
+                    res = res.replace(new RegExp(`${input.value}\\[${val}\\]`, "g"), `"${array[parseInt(val)]}"`)
+                })
+                number = [...new Set(res.match(new RegExp(`${input.value}\\[`, "g")))].length
+            }
+            if (!number) {
+                const abc = res.match(/\n.+\=\sv8yy\;?/g)
+                abc.forEach(val => {
+                    if (val.includes(input.value)) res = res.replace(val, "")
+                })
+            }
+            if (res.slice(-1) == "\n") res = res.slice(0, -1)
+            input.value = ""
+            textarea.value = ""
+            navigator.clipboard.writeText(res)
+            title.innerText = "Copied"
+            setTimeout(() => {
+                title.innerText = "Deobfuscator"
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

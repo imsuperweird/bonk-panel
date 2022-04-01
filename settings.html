@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+    <div id="panel-settings-window" style="visibility: inherit; opacity: 1;">
+        <div id="panel-settings-window-topbar">Panel Settings</div>
+        <div id="panel-settings-window-close" class="windowCloseButton brownButton brownButton_classic buttonShadow">
+        </div> <!-- superimportant -->
+
+        <div id="panel-settings-window-container">
+            <div id="panel-settings-side-bar">
+                <div id="panel-settings-size" class="panel-settings-side-bar-items">
+                    <div class="panel-settings-selected-img"></div>
+                    <div class="panel-settings-side-bar-inner-items"></div>
+                </div>
+                <div id="panel-settings-customize" class="panel-settings-side-bar-items">
+                    <div class="panel-settings-selected-img"></div>
+                    <div class="panel-settings-side-bar-inner-items"></div>
+                </div>
+                <div id="panel-settings-add-remove" class="panel-settings-side-bar-items">
+                    <div class="panel-settings-selected-img"></div>
+                    <div class="panel-settings-side-bar-inner-items"></div>
+                </div>
+                <div id="panel-settings-backup" class="panel-settings-side-bar-items">
+                    <div class="panel-settings-selected-img"></div>
+                    <div class="panel-settings-side-bar-inner-items"></div>
+                </div>
+                <div id="panel-settings-info" class="panel-settings-side-bar-items">
+                    <div class="panel-settings-selected-img"></div>
+                    <div class="panel-settings-side-bar-inner-items"></div>
+                </div>
+            </div>
+            <div id="panel-settings-content">
+                <div id="panel-settings-content-size" class="panel-settings-content-container">
+                    <div id="panel-settings-content-size-container-1">
+                        <input type="number" id="panel-settings-size-left">
+                        <input type="number" id="panel-settings-size-right">
+                    </div>
+                    <div id="panel-settings-content-size-container-2">
+                        <div id="panel-settings-content-size-one">
+                            <input type="number" id="panel-settings-size-1">
+                            <input type="number" id="panel-settings-size-2">
+                        </div>
+                        <div id="panel-settings-content-size-two">
+                            <div id="panel-settings-content-size-panel1">1</div>
+                            <div id="panel-settings-content-size-panel2">2</div>
+                            <div id="panel-settings-content-size-panel3">3</div>
+                            <div id="panel-settings-content-size-panel4">4</div>
+                        </div>
+                        <div id="panel-settings-content-size-three">
+                            <input type="number" id="panel-settings-size-3">
+                            <input type="number" id="panel-settings-size-4">
+                        </div>
+                    </div>
+                    <div id="panel-settings-content-size-container-3">
+                        <div id="panel-settings-size-apply" class="brownButton brownButton_classic buttonShadow">APPLY
+                        </div>
+                        <div id="panel-settings-size-reset" class="brownButton brownButton_classic buttonShadow">RESET
+                        </div>
+                    </div>
+                </div>
+                <div id="panel-settings-content-customize" class="panel-settings-content-container">
+                    <div id="panel-settings-content-customize-container-inner-container">
+                        <div id="panel-settings-content-customize-container-1">
+                            <label>Top bar size</label>
+                            <input id="panel-settings-top-bar-size" type="number">
+                            <label>Font size</label>
+                            <input id="panel-settings-font-size" type="number">
+                            <label>Spacing size</label>
+                            <input id="panel-settings-spacing-size" type="number">
+                        </div>
+                        <div id="panel-settings-content-customize-container-2">
+                            <div id="panel-settings-customize-preview">
+                                <div id="panel-settings-customize-preview-top-bar"></div>
+                                <div id="panel-settings-customize-preview-bottom-bar">
+                                    <div>TEXT 1</div>
+                                    <div>TEXT 2</div>
+                                    <div>TEXT 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="panel-settings-content-customize-container-3">
+                            <div id="panel-settings-customize-apply"
+                                class="brownButton brownButton_classic buttonShadow">
+                                APPLY</div>
+                            <div id="panel-settings-customize-reset"
+                                class="brownButton brownButton_classic buttonShadow">
+                                RESET</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="panel-settings-content-add-remove"
+                    class="panel-settings-content-container panel-settings-content-container-selected">
+                    <div id="panel-settings-content-add-remove-inner-container">
+                        <div id="panel-settings-content-add-remove-container-1">
+                            <select id="panel-settings-content-add-remove-when">
+                                <option value="1">Main menu</option>
+                                <option value="2">Room list</option>
+                                <option value="3">Lobby</option>
+                                <option value="4">Lobby (Host)</option>
+                                <option value="5">Editor</option>
+                                <option value="6">In game</option>
+                                <option value="7">In game (Host)</option>
+                                <option value="8">In game (Quick play)</option>
+                            </select>
+                            <table id="panel-settings-content-add-remove-table">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="panel-settings-content-add-remove-container-2"></div>
+                        <div id="panel-settings-content-add-remove-container-3">
+                            <main id="panel-settings-add-remove-add-container">
+                                <table id="panel-settings-add-remove-add-dropdown">
+                                    <tr>
+                                        <th id="panel-settings-add-remove-add-1">1</th>
+                                        <th id="panel-settings-add-remove-add-3">3</th>
+                                    </tr>
+                                    <tr>
+                                        <th id="panel-settings-add-remove-add-2">2</th>
+                                        <th id="panel-settings-add-remove-add-4">4</th>
+                                    </tr>
+                                </table>
+                                <div id="panel-settings-add-remove-add"
+                                    class="brownButton brownButton_classic buttonShadow">ADD</div>
+                            </main>
+                            <div id="panel-settings-add-remove-remove"
+                                class="brownButton brownButton_classic buttonShadow">REMOVE</div>
+                            <div id="panel-settings-add-remove-reset"
+                                class="brownButton brownButton_classic buttonShadow">RESET</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="panel-settings-content-backup" class="panel-settings-content-container"></div>
+                <div id="panel-settings-content-info" class="panel-settings-content-container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
